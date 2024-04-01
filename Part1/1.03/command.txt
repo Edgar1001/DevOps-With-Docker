@@ -1,0 +1,6 @@
+edgar@edgar-VirtualBox:~$ sudo docker run -d --rm -it --name secret-msg devopsdockeruh/simple-web-service:ubuntu
+71d6e2c4c3d2fd82bbd949b0fdadb26bddfab347b6821b404b445afe0eb65f5e
+
+edgar@edgar-VirtualBox:~$ sudo docker exec -it secret-msg bash
+root@71d6e2c4c3d2:/usr/src/app# sudo tail -f ./text.log
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'

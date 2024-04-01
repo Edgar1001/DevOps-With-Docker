@@ -1,0 +1,5 @@
+edgar@edgar-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                          PORTS     NAMES
+de0f3b31cf77   nginx     "/docker-entrypoint.…"   2 minutes ago    Exited (0) About a minute ago             nice_allen
+61aab19da238   nginx     "/docker-entrypoint.…"   2 minutes ago    Exited (0) About a minute ago             strange_poitras
+868563e89853   nginx     "/docker-entrypoint.…"   2 minutes ago    Up 2 minutes                    80/tcp    stupefied_nightingale

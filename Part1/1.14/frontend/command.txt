@@ -1,0 +1,2 @@
+root@edgar-VirtualBox:/home/edgar/material-applications/example-frontend# docker build . -t frontend-project && docker run -p 5000:5000 frontend-project
+

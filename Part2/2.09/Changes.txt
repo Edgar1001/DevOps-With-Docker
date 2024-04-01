@@ -1,0 +1,5 @@
+Changes made in ENV from Frontend Dockerfile:
+
+ENV REACT_APP_BACKEND_URL=http://localhost/api
+
+

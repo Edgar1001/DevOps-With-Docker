@@ -1,0 +1,10 @@
+edgar@edgar-VirtualBox:~$ sudo docker pull devopsdockeruh/simple-web-service:ubuntu
+
+edgar@edgar-VirtualBox:~$ sudo docker pull devopsdockeruh/simple-web-service:alpine
+
+edgar@edgar-VirtualBox:~$ sudo docker images
+
+edgar@edgar-VirtualBox:~$ sudo docker run -d --rm -it --name secret-msg devopsdockeruh/simple-web-service:alpine
+edgar@edgar-VirtualBox:~$ sudo docker exec -it secret-msg sh
+/usr/src/app # tail -f ./text.log
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'

@@ -1,0 +1,4 @@
+edgar@edgar-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+edgar@edgar-VirtualBox:~$ sudo docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE

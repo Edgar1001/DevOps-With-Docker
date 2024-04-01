@@ -1,0 +1,3 @@
+edgar@edgar-VirtualBox:~$ sudo docker build . -t curler
+
+edgar@edgar-VirtualBox:~$ sudo docker run -it curler
