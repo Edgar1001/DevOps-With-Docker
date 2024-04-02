@@ -12,6 +12,7 @@ services:
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=postgres
             - POSTGRES_DATABASE=postgres
+            - FRONT_URL=http://localhost
         depends_on:
             - db
             - redis
@@ -19,8 +20,10 @@ services:
     
     frontend:
         image: frontend-project
-        ports:
-            - 5000:5000
+        #ports:
+        #   - 5000:5000
+        environment:
+      - API_URL=http://localhost/api
         container_name: frontend
     
     redis:
