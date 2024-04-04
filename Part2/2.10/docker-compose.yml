@@ -2,28 +2,28 @@ version: '3.5'
 
 services:
     backend:
-        image: backend-project
-        ports:
-            - 8080:8080
+        image: backend
+        build: ./example-backend
+       # ports:
+       #     - 8080:8080
         environment:
             
             - REDIS_HOST=redis
+            - REQUEST_ORIGIN=http://localhost/api
             - POSTGRES_HOST=db
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=postgres
             - POSTGRES_DATABASE=postgres
-            - FRONT_URL=http://localhost
         depends_on:
             - db
             - redis
         container_name: backend
     
     frontend:
-        image: frontend-project
-        #ports:
-        #   - 5000:5000
-        environment:
-      - API_URL=http://localhost/api
+        image: frontend
+        build: ./example-frontend
+       # ports:
+       #     - 5000:5000
         container_name: frontend
     
     redis:
@@ -47,5 +47,3 @@ services:
             - backend
             - frontend
         container_name: nginx
-
-
